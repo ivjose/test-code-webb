@@ -141,7 +141,8 @@ test('submit success api', async () => {
   });
   userEvent.click(amazonWorkplace);
 
-  const submitButton = screen.getByText(/save/i);
+ 
+  const submitButton = screen.getByRole('button', { name: /save/i });
   userEvent.click(submitButton);
 
   const alert = await screen.findByRole('alert');
@@ -184,7 +185,7 @@ test('submit error api', async () => {
 
   userEvent.click(amazonWorkplace);
 
-  const submitButton = screen.getByText(/save/i);
+  const submitButton = screen.getByRole('button', { name: /save/i });
   userEvent.click(submitButton);
 
   const alert = await screen.findByRole('alert');
