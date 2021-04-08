@@ -23,6 +23,17 @@ test('login admin user app', async () => {
     name: /admin/i,
   });
   expect(newWorkBookForm).toBeInTheDocument();
+
+  const logoutButton = screen.getByRole('button', {
+    name: /logout/i,
+  });
+
+  userEvent.click(logoutButton);
+
+  const signInTitle = screen.getByRole('heading', {
+    name: /sign in to your account/i,
+  });
+  expect(signInTitle).toBeInTheDocument();
 });
 
 test('login basic user app', async () => {
