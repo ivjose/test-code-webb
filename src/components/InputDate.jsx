@@ -20,6 +20,7 @@ const InputDate = ({ label, name, value, error, onChange }) => {
           name={name}
           id={name}
           value={value}
+          onChange={onChange}
           onBlur={onChange}
         />
 
@@ -42,7 +43,11 @@ const InputDate = ({ label, name, value, error, onChange }) => {
         )}
       </div>
       {error && (
-        <p className="mt-2 text-sm text-red-600" id="email-error">
+        <p
+          className="mt-2 text-sm text-red-600"
+          data-testid={`${name}-error`}
+          id={`${name}-error`}
+        >
           {error}
         </p>
       )}

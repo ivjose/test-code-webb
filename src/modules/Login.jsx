@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useLoginAuth } from '../contexts/LoginAuth';
-import ErrorDisplay from '../components/ErrorDisplay';
+import AlertDisplay from '../components/AlertDisplay';
 
 const Login = () => {
   const [userCredentials, setUserCredentials] = useState({
@@ -27,7 +27,9 @@ const Login = () => {
             Sign in to your account
           </h2>
         </div>
-        {authDetails.error && <ErrorDisplay errorMessage={authDetails.error} />}
+        {authDetails.error && (
+          <AlertDisplay status="error" message={authDetails.error} />
+        )}
         <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
           <div className="-space-y-px rounded-md shadow-sm">
             <div>

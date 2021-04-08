@@ -39,7 +39,11 @@ const InputField = ({ label, name, value, error, onChange, type = 'text' }) => {
         )}
       </div>
       {error && (
-        <p className="mt-2 text-sm text-red-600" id="email-error">
+        <p
+          className="mt-2 text-sm text-red-600"
+          data-testid={`${name}-error`}
+          id={`${name}-error`}
+        >
           {error}
         </p>
       )}

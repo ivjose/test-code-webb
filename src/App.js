@@ -1,5 +1,4 @@
-import Workbook from './modules/Workbook';
-import WorkPlaces from './modules/WorkPlaces';
+import Workbook from './modules/Workbook'; 
 import Login from './modules/Login';
 
 import Layout from './components/Layout';
@@ -11,15 +10,11 @@ function App() {
   const [useDetails] = useLoginAuth();
  
 
-  // if (!useDetails.role) {
-  //   return <Login />;
-  // }
+  if (!useDetails.role) {
+    return <Login />;
+  }
 
-  // return (
-  //   <Layout title="Work places">
-  //     <WorkPlaces />
-  //   </Layout>
-  // );
+ 
   return (
     <Layout title="New Workbook Entry">
       <Workbook />
