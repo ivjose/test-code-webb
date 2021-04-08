@@ -1,4 +1,4 @@
-import Workbook from './modules/Workbook'; 
+import Workbook from './modules/Workbook';
 import Login from './modules/Login';
 
 import Layout from './components/Layout';
@@ -8,13 +8,11 @@ import './App.css';
 
 function App() {
   const [useDetails] = useLoginAuth();
- 
 
   if (!useDetails.role) {
     return <Login />;
   }
 
- 
   return (
     <Layout title="New Workbook Entry">
       <Workbook />
