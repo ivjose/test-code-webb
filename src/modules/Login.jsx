@@ -15,7 +15,6 @@ const Login = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(userCredentials);
     authLogin({ ...userCredentials });
   };
 

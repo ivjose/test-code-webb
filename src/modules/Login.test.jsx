@@ -19,7 +19,7 @@ test('render input login', async () => {
 });
 
 test('invalid credentials login', () => {
-  const { debug } = render(<Login />);
+  render(<Login />);
   const emailField = screen.getByLabelText(/email address/i);
   expect(emailField).toBeInTheDocument();
 
@@ -34,5 +34,4 @@ test('invalid credentials login', () => {
 
   const alert = screen.getByRole('alert');
   expect(alert).toHaveTextContent(/invalid Credentails/i);
-  debug(emailField);
 });
