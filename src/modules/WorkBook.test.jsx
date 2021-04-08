@@ -146,7 +146,6 @@ test('submit success api', async () => {
   userEvent.click(submitButton);
 
   const alert = await screen.findByRole('alert');
-
   expect(alert).toHaveTextContent(/successfully created/i);
 });
 

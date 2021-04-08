@@ -83,13 +83,14 @@ const Workbook = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     let hasError = '';
+    setStatus('');
 
     Object.entries(fields).forEach(([key, value]) => {
       if (!value) {
         hasError = handleError(key, value);
       }
     });
-
+ 
     if (workplaces.length === 0) {
       setStatus('worplace');
       return;
@@ -122,7 +123,7 @@ const Workbook = () => {
   const handleReset = () => {
     setFields(defaultValue);
     setErrors(defaultValue);
-    setWorkplaces(['']);
+    setWorkplaces([]);
   };
 
   const handleSelectWorkplace = (status, val) => {
