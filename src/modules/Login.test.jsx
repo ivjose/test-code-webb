@@ -3,7 +3,7 @@ import userEvent from '@testing-library/user-event';
 import { render, screen } from '../test-utils/testing-library-utils';
 import Login from './Login';
 
-test.only('render input login', async () => {
+test('render input login', async () => {
   render(<Login />);
   const emailField = screen.getByLabelText(/email address/i);
   expect(emailField).toBeInTheDocument();
