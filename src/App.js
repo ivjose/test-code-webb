@@ -14,7 +14,7 @@ function App() {
   }
 
   return (
-    <Layout title="New Workbook Entry">
+    <Layout title={`New Workbook Entry (${useDetails.role})`}>
       <Workbook />
     </Layout>
   );
