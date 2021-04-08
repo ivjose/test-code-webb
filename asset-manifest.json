@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/test-code-webb/static/css/main.b75e8d9c.chunk.css",
+    "main.js": "/test-code-webb/static/js/main.dfbc0aa6.chunk.js",
+    "main.js.map": "/test-code-webb/static/js/main.dfbc0aa6.chunk.js.map",
+    "runtime-main.js": "/test-code-webb/static/js/runtime-main.c3a3acc5.js",
+    "runtime-main.js.map": "/test-code-webb/static/js/runtime-main.c3a3acc5.js.map",
+    "static/js/2.c4d10f2e.chunk.js": "/test-code-webb/static/js/2.c4d10f2e.chunk.js",
+    "static/js/2.c4d10f2e.chunk.js.map": "/test-code-webb/static/js/2.c4d10f2e.chunk.js.map",
+    "static/js/3.c7ce2c28.chunk.js": "/test-code-webb/static/js/3.c7ce2c28.chunk.js",
+    "static/js/3.c7ce2c28.chunk.js.map": "/test-code-webb/static/js/3.c7ce2c28.chunk.js.map",
+    "index.html": "/test-code-webb/index.html",
+    "static/css/main.b75e8d9c.chunk.css.map": "/test-code-webb/static/css/main.b75e8d9c.chunk.css.map",
+    "static/js/2.c4d10f2e.chunk.js.LICENSE.txt": "/test-code-webb/static/js/2.c4d10f2e.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c3a3acc5.js",
+    "static/js/2.c4d10f2e.chunk.js",
+    "static/css/main.b75e8d9c.chunk.css",
+    "static/js/main.dfbc0aa6.chunk.js"
+  ]
+}
