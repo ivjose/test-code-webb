@@ -2,7 +2,7 @@
   "name": "webbfontaine",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ivjose.github.io/test-code-webb",
+  "homepage": "http://ivjose.github.io/test-code-webb",
   "dependencies": {
     "@craco/craco": "^6.1.1",
     "@tailwindcss/forms": "^0.3.2",
