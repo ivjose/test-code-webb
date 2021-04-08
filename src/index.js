@@ -2,11 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import { LoginAuthProvider } from './contexts/LoginAuth';
+
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <LoginAuthProvider>
+      <App />
+    </LoginAuthProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

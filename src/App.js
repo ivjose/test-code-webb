@@ -1,24 +1,29 @@
-import logo from './logo.svg';
+import Workbook from './modules/Workbook';
+import WorkPlaces from './modules/WorkPlaces';
+import Login from './modules/Login';
+
+import Layout from './components/Layout';
+import { useLoginAuth } from './contexts/LoginAuth';
+
 import './App.css';
 
 function App() {
+  const [useDetails] = useLoginAuth();
+ 
+
+  // if (!useDetails.role) {
+  //   return <Login />;
+  // }
+
+  // return (
+  //   <Layout title="Work places">
+  //     <WorkPlaces />
+  //   </Layout>
+  // );
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Layout title="New Workbook Entry">
+      <Workbook />
+    </Layout>
   );
 }
 
