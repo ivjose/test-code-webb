@@ -1,4 +1,4 @@
-const AlertDisplay = ({ status = 'default', message }) => {
+const AlertDisplay = ({ status = 'default', message = 'default message' }) => {
   const textColor = {
     error: 'text-red-800',
     success: 'text-green-700',
