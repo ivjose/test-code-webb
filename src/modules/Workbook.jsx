@@ -1,4 +1,4 @@
-import { useState, useCallback, useEffect } from 'react';
+import { useState, useCallback } from 'react';
 
 import InputField from '../components/InputField';
 import InputDate from '../components/InputDate';

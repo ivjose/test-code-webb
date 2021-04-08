@@ -19,11 +19,10 @@ const TestField = () => {
 };
 
 test('render input date Field', () => {
-  const { debug } = render(<TestField />);
+  render(<TestField />);
 
   const inputDateField = screen.getByLabelText(/birthdate/i);
 
-  debug(inputDateField);
   expect(inputDateField).toBeInTheDocument();
 
   userEvent.clear(inputDateField);
@@ -32,5 +31,5 @@ test('render input date Field', () => {
   expect(inputDateField.value).toBe('11-21-2001');
   userEvent.clear(inputDateField);
   expect(inputDateField.value).toBe('');
-  expect(inputDateField).toHaveClass('border-red-300 text-red-900'); 
+  expect(inputDateField).toHaveClass('border-red-300 text-red-900');
 });

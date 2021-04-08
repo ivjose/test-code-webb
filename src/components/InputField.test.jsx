@@ -13,11 +13,12 @@ const TestField = () => {
       name="username"
       value={value}
       onChange={(e) => setValue(e.target.value)}
+      error="Required fields"
     />
   );
 };
 
-test('render InputField', () => {
+test('render input field', () => {
   render(<TestField />);
 
   const inputField = screen.getByLabelText(/username/i)
@@ -29,4 +30,9 @@ test('render InputField', () => {
   expect(inputField.value).toBe('john Doe')
   userEvent.clear(inputField);
   expect(inputField.value).toBe('')
+
+  expect(inputField).toHaveClass('border-red-300 text-red-900');
 });
+
+
+ 
